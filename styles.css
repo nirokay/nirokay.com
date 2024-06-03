@@ -1,0 +1,13 @@
+html {
+    color: #e8e6e3;
+    background-color: rgb(23, 25, 33);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+header > p {
+    text-align: center;
+}
