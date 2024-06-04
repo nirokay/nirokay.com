@@ -95,3 +95,23 @@ button {
     transition: 0.1s;
     background-color: rgba(255, 100, 255, 0.2);
 }
+
+.div-centering-outer {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    display: table;
+    top: 0;
+    height: 100%;
+}
+
+.div-centering-middle {
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.div-centering-inner {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
