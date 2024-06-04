@@ -11,3 +11,87 @@ h1, h2 {
 header > p {
     text-align: center;
 }
+
+article > p {
+    text-align: left;
+}
+
+img {
+    border-radius: 10px;
+}
+
+a:link {
+    color: HotPink;
+    text-decoration: none;
+}
+
+a:visited {
+    color: HotPink;
+    text-decoration: none;
+}
+
+a:hover {
+    color: LightPink;
+    text-decoration: none;
+}
+
+a:active {
+    color: MistyRose;
+    text-decoration: none;
+}
+
+progress {
+    margin: auto 1px;
+    width: 90%;
+    border-radius: 10px;
+}
+
+progress::-webkit-progress-bar {
+    border-radius: 10px;
+    background-color: #e8e6e3;
+}
+
+progress::-webkit-progress-value {
+    border-radius: 10px;
+    background-color: #e8e6e3;
+}
+
+progress::-moz-progress-bar {
+    border-radius: 10px;
+    background-color: #e8e6e3;
+}
+
+button {
+    color: #e8e6e3;
+    margin: 4px 2px;
+    font-size: 20px;
+    transition: 0.3s;
+    border-radius: 6px;
+    display: inline-block;
+    border: none;
+    padding: 10px 20px;
+    background-color: rgba(255, 100, 255, 0.1);
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+.button {
+    color: #e8e6e3;
+    margin: 4px 2px;
+    font-size: 20px;
+    transition: 0.3s;
+    border-radius: 6px;
+    display: inline-block;
+    border: none;
+    padding: 10px 20px;
+    background-color: rgba(255, 100, 255, 0.1);
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+.button:hover {
+    transition: 0.1s;
+    background-color: rgba(255, 100, 255, 0.2);
+}
