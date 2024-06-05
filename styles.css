@@ -26,13 +26,17 @@ img {
 
 .image-clickable-link {
     margin: 5px 5px;
-    width: 200px;
-    display: inline-block;
-    max-width: 25%;
+    width: 5rem;
+    display: inline-flex;
+    max-width: 150px;
     padding: 5px;
 }
 
 .container-images-links {
+    justify-content: space-evenly;
+    display: flex;
+    align-items: baseline;
+    max-height: 150px;
     text-align: center;
 }
 
