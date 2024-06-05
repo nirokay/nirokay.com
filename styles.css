@@ -36,6 +36,7 @@ img {
     justify-content: space-evenly;
     display: flex;
     align-items: baseline;
+    flex-wrap: wrap;
     max-height: 150px;
     text-align: center;
 }
