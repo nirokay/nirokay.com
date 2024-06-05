@@ -24,6 +24,14 @@ img {
     border-radius: 10px;
 }
 
+.container-flex {
+    justify-content: space-evenly;
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
 .image-clickable-link {
     margin: 5px 5px;
     width: 5rem;
@@ -32,13 +40,11 @@ img {
     padding: 5px;
 }
 
-.container-images-links {
-    justify-content: space-evenly;
-    display: flex;
-    align-items: baseline;
-    flex-wrap: wrap;
-    max-height: 150px;
-    text-align: center;
+.code-showcase-element {
+    margin: 5px 5px;
+    display: inline-flex;
+    max-width: 45%;
+    padding: 5px;
 }
 
 a:link {
