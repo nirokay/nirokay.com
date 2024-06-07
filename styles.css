@@ -41,19 +41,20 @@ img {
 }
 
 .container-code-showcase {
+    justify-content: center;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    justify-items: center;
 }
 
 .code-showcase-element {
     background: rgba(255, 255, 255, 0.05);
     margin: 5px 5px;
-    width: 45%;
+    min-width: 300px;
+    width: 30%;
     border-radius: 10px;
     display: inline-block;
-    max-width: 400px;
+    max-width: 500px;
     padding: 10px;
 }
 
