@@ -24,6 +24,10 @@ img {
     border-radius: 10px;
 }
 
+li {
+    list-style-type: 👉;
+}
+
 .container-flex {
     justify-content: space-evenly;
     display: flex;
