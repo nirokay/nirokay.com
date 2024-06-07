@@ -40,12 +40,19 @@ img {
     padding: 5px;
 }
 
+.container-code-showcase {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-items: center;
+}
+
 .code-showcase-element {
     background: rgba(255, 255, 255, 0.05);
     margin: 5px 5px;
     width: 45%;
     border-radius: 10px;
-    display: inline-flex;
+    display: inline-block;
     max-width: 400px;
     padding: 10px;
 }
