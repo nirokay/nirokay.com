@@ -63,7 +63,7 @@ li {
 }
 
 .div-menu-bar-container {
-    position: sticky;
+    position: fixed;
     width: 100%;
     left: 0;
     display: table;
