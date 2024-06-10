@@ -8,10 +8,10 @@
 */
 
 
-const menuId = "";
+const menuId = "id-menu-bar";
 
 function getMenu() {
-    return document.getElementById(locationDropDownId);
+    return document.getElementById(menuId);
 }
 
 function changeToLocationPage() {
