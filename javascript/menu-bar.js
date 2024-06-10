@@ -1,20 +1,10 @@
-/*
-
-    Logic for Index page
-    ====================
-
-    This script basically only handles the drop-down menu.
-
-*/
-
-
 const menuId = "id-menu-bar";
 
 function getMenu() {
     return document.getElementById(menuId);
 }
 
-function changeToLocationPage() {
+function changeToSelectedPage() {
     let element = getMenu();
     if(element.selectedIndex == 0) {
         return;
