@@ -62,6 +62,18 @@ li {
     padding: 10px;
 }
 
+.div-menu-bar-container {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    display: table;
+    top: 0;
+    height: 200;
+}
+
+.div-menu-bar {
+}
+
 a:link {
     color: HotPink;
     text-decoration: none;
