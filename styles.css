@@ -1,5 +1,5 @@
 .metadata {
-    generated-at: 2024-06-10 --- 11-53-53;
+    generated-at: 2024-06-11 --- 08-46-10;
 }
 
 html {
@@ -29,15 +29,15 @@ img {
 }
 
 li {
-    list-style-type: 👉;
+    list-style-type: '👉';
 }
 
 select {
     color: #e8e6e3;
-    margin: 40px;
+    margin: 20px;
     border-radius: 10px;
-    border: 3px solid rgba(255, 255, 255, 0.05);
-    background-color: rgba(255, 255, 255, 0.05);
+    border: 3px solid #2f3139;
+    background-color: #2f3139;
 }
 
 .container-flex {
@@ -64,7 +64,7 @@ select {
 }
 
 .code-showcase-element {
-    background: rgba(255, 255, 255, 0.05);
+    background: #23252c;
     margin: 5px 5px;
     min-width: 300px;
     width: 30%;
@@ -80,6 +80,8 @@ select {
     left: 0;
     display: flex;
     top: 0;
+    height: 72px;
+    background-color: #23252c;
 }
 
 a:link {
@@ -163,7 +165,7 @@ button {
     width: 100%;
     left: 0;
     display: table;
-    top: 200;
+    top: calc(72px);
     height: 100%;
 }
 
