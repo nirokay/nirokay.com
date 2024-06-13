@@ -6,5 +6,5 @@ function getMenu() {
 
 function changeToSelectedPage() {
     let element = getMenu();
-    window.location.href = element.value;
+    window.location.href = "/" + element.value;
 }
