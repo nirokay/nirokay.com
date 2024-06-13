@@ -4,7 +4,7 @@
  * @source https://github.com/nirokay/src.nirokay.com
  * @website https://nirokay.com
  * HTML and CSS is generated using https://github.com/nirokay/websitegenerator
- * Generated at 2024-06-13 @ 11:18.41
+ * Generated at 2024-06-13 @ 11:23.14
 */
 
 html {
@@ -43,6 +43,13 @@ select {
     border-radius: 10px;
     border: 3px solid #2f3139;
     background-color: #2f3139;
+}
+
+dialog {
+    color: #e8e6e3;
+    border-color: #2f3139;
+    border-radius: 10px;
+    background-color: #23252c;
 }
 
 .container-flex {
