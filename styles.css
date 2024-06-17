@@ -4,7 +4,7 @@
  * @source https://github.com/nirokay/src.nirokay.com
  * @website https://nirokay.com
  * HTML and CSS is generated using https://github.com/nirokay/websitegenerator
- * Generated at 2024-06-17 @ 11:38.26
+ * Generated at 2024-06-17 @ 11:49.42
 */
 
 html {
@@ -42,6 +42,14 @@ select {
     margin: 20px;
     border-radius: 10px;
     border: 3px solid #2f3139;
+    background-color: #2f3139;
+}
+
+input {
+    color: #e8e6e3;
+    border-color: #2f3139;
+    border-radius: 2px;
+    padding: 2px;
     background-color: #2f3139;
 }
 
