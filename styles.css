@@ -4,7 +4,7 @@
  * @source https://github.com/nirokay/src.nirokay.com
  * @website https://nirokay.com
  * HTML and CSS is generated using https://github.com/nirokay/websitegenerator
- * Generated at 2024-08-07 @ 06:02.04
+ * Generated at 2024-08-08 @ 10:27.53
 */
 
 html {
@@ -154,10 +154,15 @@ button {
     display: inline-block;
     border: none;
     padding: 10px 20px;
-    background-color: rgba(255, 100, 255, 0.1);
+    background-color: #2f3139;
     cursor: pointer;
     text-decoration: none;
     text-align: center;
+}
+
+button:hover {
+    transition: 0.1s;
+    background-color: #23252c;
 }
 
 .button {
@@ -169,7 +174,7 @@ button {
     display: inline-block;
     border: none;
     padding: 10px 20px;
-    background-color: rgba(255, 100, 255, 0.1);
+    background-color: #2f3139;
     cursor: pointer;
     text-decoration: none;
     text-align: center;
@@ -177,7 +182,7 @@ button {
 
 .button:hover {
     transition: 0.1s;
-    background-color: rgba(255, 100, 255, 0.2);
+    background-color: #23252c;
 }
 
 .div-centering-outer {
