@@ -4,7 +4,7 @@
  * @source https://github.com/nirokay/src.nirokay.com
  * @website https://nirokay.com
  * HTML and CSS is generated using https://github.com/nirokay/websitegenerator
- * Generated at 2024-08-12 @ 11:14.17
+ * Generated at 2024-08-21 @ 10:24.19
 */
 
 html {
@@ -30,6 +30,7 @@ article > p {
 }
 
 img {
+    color: #979592;
     border-radius: 10px;
 }
 
@@ -42,6 +43,7 @@ select {
     margin: 20px;
     border-radius: 10px;
     border: 3px solid #2f3139;
+    border-style: solid;
     background-color: #2f3139;
 }
 
@@ -52,6 +54,7 @@ textarea, input {
     accent-color: HotPink;
     border-radius: 10px;
     padding: 5px 10px;
+    border-style: solid;
     background-color: #2f3139;
 }
 
@@ -64,11 +67,83 @@ dialog {
     background-color: #23252c;
 }
 
-code > pre {
+code > pre, samp > pre {
     color: #e8e6e3;
     border-radius: 10px;
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: #14151C;
+}
+
+pre > kbd {
+    font-weight: bold;
+}
+
+kbd {
+    border-color: #2f3139;
+    border-radius: 10px;
+    font-weight: bold;
+    padding: 5px;
+    border-style: outset;
+    background-color: #2f3139;
+}
+
+div:has(> blockquote) {
+    margin: 10px auto;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #2f3139;
+}
+
+blockquote p::before {
+    text-weight;
+    content: '\201C';
+}
+
+blockquote p::after {
+    content: '\201D';
+}
+
+blockquote > p {
+    font-style: italic;
+}
+
+blockquote + p {
+    text-align: right;
+}
+
+q {
+    font-style: italic;
+}
+
+dl {
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #14151C;
+}
+
+dl > dt {
+    text-decoration: underline;
+}
+
+dl > dd {
+    color: #979592;
+}
+
+abbr {
+    text-decoration-style: dotted;
+}
+
+s {
+    color: #979592;
+}
+
+fieldset {
+    border-radius: 10px;
+    background-color: #1E2028;
+}
+
+fieldset > legend {
+    text-decoration: underline;
 }
 
 .container-flex {
@@ -156,12 +231,54 @@ progress::-moz-progress-bar {
     background-color: HotPink;
 }
 
+meter {
+    background: var(--background);
+    border-color: #e8e6e3;
+    --background: #e8e6e3;
+    --optimum: ForestGreen;
+    --sub-optimum: Gold;
+    border-radius: 10px;
+    --sub-sub-optimum: Crimson;
+    border-width: 2px;
+}
+
+meter::-webkit-meter-bar {
+    background: var(--background);
+    border-color: #e8e6e3;
+    border-radius: 10px;
+    border-width: 2px;
+}
+
+meter:-moz-meter-optimum::-moz-meter-bar {
+    background: var(--optimum);
+}
+
+meter::-webkit-meter-optimum-value {
+    background: var(--optimum);
+}
+
+meter:-moz-meter-sub-optimum::-moz-meter-bar {
+    background: var(--sub-optimum);
+}
+
+meter::-webkit-meter-suboptimum-value {
+    background: var(--sub-optimum);
+}
+
+meter:-moz-meter-sub-sub-optimum::-moz-meter-bar {
+    background: var(--sub-sub-optimum);
+}
+
+meter::-webkit-meter-even-less-good-value {
+    background: var(--sub-sub-optimum);
+}
+
 button {
     color: #e8e6e3;
     margin: 4px 2px;
     font-size: 20px;
     transition: 0.3s;
-    border-radius: 6px;
+    border-radius: 10px;
     display: inline-block;
     border: none;
     padding: 10px 20px;
@@ -185,7 +302,7 @@ button:active {
     margin: 4px 2px;
     font-size: 20px;
     transition: 0.3s;
-    border-radius: 6px;
+    border-radius: 10px;
     display: inline-block;
     border: none;
     padding: 10px 20px;

@@ -1,5 +1,15 @@
 "use strict";
 const directoryGameResources = "../resources/images/games/pingpong/";
+let debugPrint = false;
+function debug(msg, element = null) {
+    if (!debugPrint) {
+        return;
+    }
+    console.log(msg);
+    if (element != null) {
+        console.log(element);
+    }
+}
 // Html IDs:
 // =========
 class Ball {
@@ -98,7 +108,7 @@ const fileBallEmpty = "ball_empty.png";
 // ================
 const config = {
     pongs: {
-        min: 3,
+        min: 2,
         multiplier: 10, // Range(0 .. 1) * multiplier
         msPongInterval: 1000,
         msPongLength: 200
@@ -112,7 +122,9 @@ let frameCount = 0;
  * This gets the next games pongs
  */
 function getGamePongs() {
-    return Math.ceil(Math.random() * config.pongs.multiplier + config.pongs.min);
+    let result = Math.ceil(Math.random() * config.pongs.multiplier + config.pongs.min);
+    debug("Random pong: " + result.toString());
+    return result;
 }
 /**
  * Sets all balls invisible except the one that is passed to it

@@ -9,5 +9,8 @@ function changeToSelectedPage() {
         console.error("Could not find navigation menu by id " + menuId);
         return;
     }
+    if (element.selectedIndex == 0) {
+        return;
+    }
     window.location.href = "/" + element.value;
 }
