@@ -1,0 +1,6 @@
+# Downloads directory:
+download/*
+!download/.info
+
+# Symlinks:
+HzgShowAround
