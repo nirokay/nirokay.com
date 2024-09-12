@@ -2,49 +2,49 @@
 <html>
 <head>
     <!-- HTML and CSS is generated using https://github.com/nirokay/websitegenerator -->
-    <!-- Generated: 2024-08-21 @ 10:24.19 -->
+    <!-- Generated: 2024-09-12 @ 10:14.54 -->
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>Cat Ping-Pong</title>
     <meta property="og:title" content="Cat Ping-Pong" />
     <meta property="og:description" content="Cats playing fucking Ping-Pong!!!!" />
-    <link rel="icon" type="image/gif" sizes="32x32" href="/resources/images//favicon.gif" />
+    <link sizes="32x32" type="image/gif" rel="icon" href="/resources/images//favicon.gif" />
     <link rel="stylesheet" href="/styles.css" title="Absolute path to global css" />
     <script src="/javascript/menu-bar.js"></script>
     <script src="../javascript/game/pingpong.js" defer></script>
     <meta property="og:image" content="../resources/images/games/pingpong/cat/pong.png" />
-    <link rel="preload" href="../resources/images/games/pingpong/table.png" as="image" />
-    <link rel="preload" href="../resources/images/games/pingpong/ball.png" as="image" />
-    <link rel="preload" href="../resources/images/games/pingpong/ball_empty.png" as="image" />
-    <link rel="preload" href="../resources/images/games/pingpong/cat/standby.png" as="image" />
-    <link rel="preload" href="../resources/images/games/pingpong/cat/pong.png" as="image" />
-    <link rel="preload" href="../resources/images/games/pingpong/cat/success/dance.gif" as="image" />
-    <link rel="preload" href="../resources/images/games/pingpong/cat/success/grin.gif" as="image" />
-    <link rel="preload" href="../resources/images/games/pingpong/cat/success/happy.gif" as="image" />
-    <link rel="preload" href="../resources/images/games/pingpong/cat/success/smug.gif" as="image" />
-    <link rel="preload" href="../resources/images/games/pingpong/cat/success/yippie.gif" as="image" />
-    <link rel="preload" href="../resources/images/games/pingpong/cat/failure/cry.gif" as="image" />
-    <link rel="preload" href="../resources/images/games/pingpong/cat/failure/disbelief.gif" as="image" />
-    <link rel="preload" href="../resources/images/games/pingpong/cat/failure/rage.gif" as="image" />
-    <link rel="preload" href="../resources/images/games/pingpong/cat/failure/sad.gif" as="image" />
-    <link rel="preload" href="../resources/images/games/pingpong/cat/failure/shock.gif" as="image" />
+    <link as="image" rel="preload" href="../resources/images/games/pingpong/ball.png" />
+    <link as="image" rel="preload" href="../resources/images/games/pingpong/ball_empty.png" />
+    <link as="image" rel="preload" href="../resources/images/games/pingpong/table.png" />
+    <link as="image" rel="preload" href="../resources/images/games/pingpong/cat/pong.png" />
+    <link as="image" rel="preload" href="../resources/images/games/pingpong/cat/standby.png" />
+    <link as="image" rel="preload" href="../resources/images/games/pingpong/cat/success/dance.gif" />
+    <link as="image" rel="preload" href="../resources/images/games/pingpong/cat/success/grin.gif" />
+    <link as="image" rel="preload" href="../resources/images/games/pingpong/cat/success/happy.gif" />
+    <link as="image" rel="preload" href="../resources/images/games/pingpong/cat/success/smug.gif" />
+    <link as="image" rel="preload" href="../resources/images/games/pingpong/cat/success/yippie.gif" />
+    <link as="image" rel="preload" href="../resources/images/games/pingpong/cat/failure/cry.gif" />
+    <link as="image" rel="preload" href="../resources/images/games/pingpong/cat/failure/disbelief.gif" />
+    <link as="image" rel="preload" href="../resources/images/games/pingpong/cat/failure/rage.gif" />
+    <link as="image" rel="preload" href="../resources/images/games/pingpong/cat/failure/sad.gif" />
+    <link as="image" rel="preload" href="../resources/images/games/pingpong/cat/failure/shock.gif" />
 </head>
 <body>
     <div class="div-centering-outer"><div class="div-centering-middle"><div class="div-centering-inner"><header><h1>Cat Ping-Pong</h1>
     <p>Bored of coin flipping? Me too: <i><b>CATS PLAYING PING-PONG!</b></i></p></header>
     <article><div class="container-flex"><button onclick="game();" id="id-button-start-game">Start game</button></div>
-    <div style="margin:20px;" class="container-flex"><h1 id="id-cat-left-score" style="scale:3;">0</h1>
+    <div style="margin:20px;" class="container-flex"><h1 style="scale:3;" id="id-cat-left-score">0</h1>
     <h2>:</h2>
-    <h1 id="id-cat-right-score" style="scale:3;">0</h1></div>
-    <div style="align-items:end;min-height:400px;" class="container-flex"><img src="-" alt="Ball Left - Game Over" id="id-ball-left-game-over" style="max-width:15px;align-self:end;" />
-    <img src="-" alt="Left cat" id="id-cat-left-picture" style="max-height:300px;max-width:200px;width:20%;" />
-    <img src="-" alt="Ball Left" id="id-ball-left" style="max-width:15px;align-self:baseline;" />
-    <img src="../resources/images/games/pingpong/table.png" alt="Ping pong table" style="max-height:200px;max-width:300px;width:20%;" />
-    <img src="-" alt="Ball Right" id="id-ball-right" style="max-width:15px;align-self:baseline;" />
-    <img src="-" alt="Right cat" id="id-cat-right-picture" style="max-height:300px;max-width:200px;width:20%;transform:scaleX(-1);" />
-    <img src="-" alt="Ball Right - Game Over" id="id-ball-right-game-over" style="max-width:15px;align-self:end;" /></div></article></div></div></div>
+    <h1 style="scale:3;" id="id-cat-right-score">0</h1></div>
+    <div style="align-items:end;min-height:400px;" class="container-flex"><img src="-" style="max-width:15px;align-self:end;" id="id-ball-left-game-over" alt="Ball Left - Game Over" />
+    <img src="-" style="max-height:300px;max-width:200px;width:20%;" id="id-cat-left-picture" alt="Left cat" />
+    <img src="-" style="max-width:15px;align-self:baseline;" id="id-ball-left" alt="Ball Left" />
+    <img src="../resources/images/games/pingpong/table.png" style="max-height:200px;max-width:300px;width:20%;" alt="Ping pong table" />
+    <img src="-" style="max-width:15px;align-self:baseline;" id="id-ball-right" alt="Ball Right" />
+    <img src="-" style="max-height:300px;max-width:200px;width:20%;transform:scaleX(-1);" id="id-cat-right-picture" alt="Right cat" />
+    <img src="-" style="max-width:15px;align-self:end;" id="id-ball-right-game-over" alt="Ball Right - Game Over" /></div></article></div></div></div>
     <div class="div-menu-bar-container"><a href="/index.html"><h2 style="padding-left:10px;color:#e8e6e3;">nirokay</h2></a>
-    <select name="Menu bar" id="id-menu-bar" onchange="changeToSelectedPage();"><option value="--ignore--" selected>🔍 Navigation</option>
+    <select id="id-menu-bar" name="Menu bar" onchange="changeToSelectedPage();"><option selected value="--ignore--">🔍 Navigation</option>
     <option value="index.html">Home</option>
     <option value="links.html">Links</option>
     <option value="projects.html">Projects</option>
