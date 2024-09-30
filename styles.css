@@ -4,7 +4,7 @@
  * @source https://github.com/nirokay/src.nirokay.com
  * @website https://nirokay.com
  * HTML and CSS is generated using https://github.com/nirokay/websitegenerator
- * Generated at 2024-09-16 @ 11:16.28
+ * Generated at 2024-09-30 @ 11:00.57
 */
 
 html {
@@ -202,12 +202,12 @@ a:visited {
 
 a:hover {
     color: LightPink;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 a:active {
     color: MistyRose;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 progress {
