@@ -4,7 +4,7 @@
  * @source https://github.com/nirokay/src.nirokay.com
  * @website https://nirokay.com
  * HTML and CSS is generated using https://github.com/nirokay/websitegenerator
- * Generated at 2024-10-24 @ 09:53.02
+ * Generated at 2024-10-24 @ 10:20.54
 */
 
 html {
@@ -95,7 +95,6 @@ div:has(> blockquote) {
 }
 
 blockquote p::before {
-    text-weight;
     content: '\201C';
 }
 
@@ -113,6 +112,10 @@ blockquote + p {
 
 q {
     font-style: italic;
+}
+
+th, td {
+    padding: 10px;
 }
 
 dl {
@@ -181,6 +184,7 @@ fieldset > legend {
 }
 
 .div-menu-bar-container {
+    padding-left: 10px;
     position: fixed;
     width: 100%;
     left: 0;
