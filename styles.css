@@ -4,7 +4,7 @@
  * @source https://github.com/nirokay/src.nirokay.com
  * @website https://nirokay.com
  * HTML and CSS is generated using https://github.com/nirokay/websitegenerator
- * Generated at 2024-10-24 @ 10:23.51
+ * Generated at 2024-10-29 @ 09:14.43
 */
 
 html {
@@ -32,7 +32,6 @@ article > p {
 img {
     color: #979592;
     border-radius: 10px;
-    background-color: #2f3139;
 }
 
 ul > li {

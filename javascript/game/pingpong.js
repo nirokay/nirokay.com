@@ -104,6 +104,16 @@ const fileCatPong = "pong.png";
 //  - Ball assets:
 const fileBall = "ball.png";
 const fileBallEmpty = "ball_empty.png";
+// Audio files:
+// ============
+const directorySounds = "../resources/sounds/games/pingpong/";
+function newSound(filename) {
+    return new Audio(directorySounds + filename);
+}
+const soundPingPong = newSound("pingpong.mp3");
+const soundYippie = newSound("yippie.mp3");
+const soundWinningMusic = newSound("winning-music.mp3");
+soundWinningMusic.volume = 0.5;
 // Other constants:
 // ================
 const config = {
@@ -193,6 +203,7 @@ function getLosingCat() {
 function stepCatsPlayingPingPong(pongs) {
     let winningCat = getWinningCat();
     let losingCat = getLosingCat();
+    soundPingPong.play();
     // Animate cats:
     losingCat.setFrame(directoryCatWhileGaming + fileCatStandBy);
     winningCat.setFrame(directoryCatWhileGaming + fileCatPong);
@@ -224,19 +235,28 @@ function endGame() {
     let loserGif = directoryCatFailure + filesCatFailure[getRandomIndex(filesCatFailure)];
     getWinningCat().setFrame(winnerGif);
     getLosingCat().setFrame(loserGif);
+    soundYippie.play();
     getWinningCat().increaseScore();
-    setButtonText("Another round!");
-    gameLock = false;
+    setTimeout(() => {
+        soundWinningMusic.play();
+        setButtonText("Another round!");
+        gameLock = false;
+    }, 1000);
 }
 /**
  * Game logic function (called by the "Start Game" button)
  */
 function game() {
+    // Ignore when game is in action:
     if (gameLock) {
         return;
     }
+    // Lock for game and reset resources:
     gameLock = true;
     setButtonText("Waiting for results...");
+    // Stop winning music:
+    soundWinningMusic.pause();
+    soundWinningMusic.currentTime = 0;
     // Init game:
     setCatsIdle();
     frameCount = 0;
