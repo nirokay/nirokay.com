@@ -18,9 +18,11 @@ class Ball {
     }
 }
 class Cat {
-    constructor(picture, score) {
+    constructor(name, picture, score, highscore) {
+        this.name = name;
         this.pictureId = picture;
         this.scoreId = score;
+        this.highscoreId = highscore;
     }
     /**
      * Updates the source of the cat image element
@@ -54,6 +56,17 @@ class Cat {
             return;
         }
         this.setScore(parseInt(element.innerHTML) + 1);
+        switch (this.name) {
+            case "left":
+                updateHighscore(1, 0);
+                break;
+            case "right":
+                updateHighscore(0, 1);
+                break;
+            default:
+                // This should never happen:
+                console.error("Wtf kind of cat name is " + this.name);
+        }
     }
     /**
      * Shifts the cat up
@@ -70,8 +83,8 @@ class Cat {
         }, config.pongs.msPongLength);
     }
 }
-let catLeft = new Cat("id-cat-left-picture", "id-cat-left-score");
-let catRight = new Cat("id-cat-right-picture", "id-cat-right-score");
+let catLeft = new Cat("left", "id-cat-left-picture", "id-cat-left-score", "id-cat-left-highscore");
+let catRight = new Cat("right", "id-cat-right-picture", "id-cat-right-score", "id-cat-right-highscore");
 let ballLeft = new Ball("id-ball-left");
 let ballRight = new Ball("id-ball-right");
 let ballLeftGameOver = new Ball("id-ball-left-game-over");
@@ -114,6 +127,82 @@ const soundPingPong = newSound("pingpong.mp3");
 const soundYippie = newSound("yippie.mp3");
 const soundWinningMusic = newSound("winning-music.mp3");
 soundWinningMusic.volume = 0.5;
+// Cookie:
+// =======
+/**
+ * Returns cookie in a index-value pair dictionary
+ * @returns object Dictionary of key-value pairs
+ */
+function fetchCookie() {
+    let result = {};
+    let cookie = document.cookie;
+    cookie.split(";").forEach((raw) => {
+        let splitValues = raw.trim().split("=");
+        let index = splitValues[0];
+        if (splitValues.length < 2) {
+            result[index] = null;
+            return;
+        }
+        let value = splitValues[1];
+        result[index] = value;
+    });
+    return result;
+}
+/**
+ * Pushes the cookie into storage
+ */
+function sendCookie(dictionary) {
+    var _a;
+    //                           y    d     constant (full day)
+    let expirationDays = 5 * 365 * (1000 * 60 * 60 * 24);
+    let expirationDate = new Date().getTime() + expirationDays;
+    for (const index in dictionary) {
+        if (Object.prototype.hasOwnProperty.call(dictionary, index)) {
+            const value = (_a = dictionary[index]) !== null && _a !== void 0 ? _a : "";
+            let newCookieValue = index + "=" + value + "; expires=" + expirationDate.toString() + "; ";
+            document.cookie = newCookieValue;
+            console.log(newCookieValue);
+        }
+    }
+}
+// Highscore:
+// ============
+function updateHighscore(addLeft, addRight) {
+    var _a;
+    let cookie = fetchCookie();
+    let highscoreLeft = 0;
+    let highscoreRight = 0;
+    // Get cookie score:
+    let currentScores = ((_a = cookie["highscore"]) !== null && _a !== void 0 ? _a : "0:0").split(":");
+    try {
+        highscoreLeft = parseInt(currentScores[0]);
+    }
+    catch (error) {
+        console.error(error);
+    }
+    try {
+        highscoreRight = parseInt(currentScores[1]);
+    }
+    catch (error) {
+        console.error(error);
+    }
+    // Update highscore:
+    highscoreLeft += addLeft;
+    highscoreRight += addRight;
+    // Update Cookie:
+    let newScore = highscoreLeft.toString() + ":" + highscoreRight.toString();
+    cookie["highscore"] = newScore;
+    sendCookie(cookie);
+    // Update HTML:
+    let htmlHighscoreLeft = document.getElementById(catLeft.highscoreId);
+    if (htmlHighscoreLeft != null) {
+        htmlHighscoreLeft.innerHTML = highscoreLeft.toString();
+    }
+    let htmlHighscoreRight = document.getElementById(catRight.highscoreId);
+    if (htmlHighscoreRight != null) {
+        htmlHighscoreRight.innerHTML = highscoreRight.toString();
+    }
+}
 // Other constants:
 // ================
 const config = {
@@ -128,6 +217,8 @@ const config = {
 // ==========
 let gameLock = false;
 let frameCount = 0;
+// Game logic stuff:
+// =================
 /**
  * This gets the next games pongs
  */
@@ -273,4 +364,5 @@ window.onload = () => {
     moveBallTo(new Ball("null")); // Inits sources for the balls
     setCatsIdle(); // Inits sources for the cats
     setButtonText("Begin the battle!"); // Overrides the button text to before-first-game state
+    updateHighscore(0, 0); // Display highscore
 };
