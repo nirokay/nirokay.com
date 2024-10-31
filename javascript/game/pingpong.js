@@ -161,7 +161,6 @@ function sendCookie(dictionary) {
             const value = (_a = dictionary[index]) !== null && _a !== void 0 ? _a : "";
             let newCookieValue = index + "=" + value + "; expires=" + expirationDate.toString() + "; ";
             document.cookie = newCookieValue;
-            console.log(newCookieValue);
         }
     }
 }
