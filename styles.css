@@ -4,7 +4,7 @@
  * @source https://github.com/nirokay/src.nirokay.com
  * @website https://nirokay.com
  * HTML and CSS is generated using https://github.com/nirokay/websitegenerator
- * Generated at 2024-11-09 @ 05:37.26
+ * Generated at 2024-11-09 @ 06:11.57
 */
 
 html {
@@ -165,6 +165,11 @@ fieldset > legend {
     padding: 5px;
 }
 
+.code-showcase-language-image {
+    border-radius: 0px;
+    max-height: 1rem;
+}
+
 .container-code-showcase {
     justify-content: center;
     display: flex;
@@ -196,21 +201,25 @@ fieldset > legend {
 
 a:link {
     color: HotPink;
+    text-decoration-color: #e8e6e3;
     text-decoration: none;
 }
 
 a:visited {
     color: HotPink;
+    text-decoration-color: #e8e6e3;
     text-decoration: none;
 }
 
 a:hover {
     color: LightPink;
+    text-decoration-color: #e8e6e3;
     text-decoration: underline;
 }
 
 a:active {
     color: MistyRose;
+    text-decoration-color: #e8e6e3;
     text-decoration: underline;
 }
 
