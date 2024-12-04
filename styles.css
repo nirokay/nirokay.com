@@ -4,12 +4,12 @@
  * @source https://github.com/nirokay/src.nirokay.com
  * @website https://nirokay.com
  * HTML and CSS is generated using https://github.com/nirokay/websitegenerator
- * Generated at 2024-11-09 @ 06:11.57
+ * Generated at 2024-12-04 @ 02:38.40
 */
 
 html {
-    color: #e8e6e3;
     background-color: rgb(23, 25, 33);
+    color: #e8e6e3;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -30,8 +30,8 @@ article > p {
 }
 
 img {
-    color: #979592;
     border-radius: 10px;
+    color: #979592;
 }
 
 ul > li {
@@ -39,39 +39,39 @@ ul > li {
 }
 
 select {
+    background-color: #2f3139;
+    border-radius: 10px;
+    border-style: solid;
+    border: 3px solid #2f3139;
     color: #e8e6e3;
     margin: 20px;
-    border-radius: 10px;
-    border: 3px solid #2f3139;
-    border-style: solid;
-    background-color: #2f3139;
 }
 
 textarea, input {
+    accent-color: HotPink;
+    background-color: #2f3139;
+    border-color: #2f3139;
+    border-radius: 10px;
+    border-style: solid;
     color: #e8e6e3;
     margin: 4px 5px;
-    border-color: #2f3139;
-    accent-color: HotPink;
-    border-radius: 10px;
     padding: 5px 10px;
-    border-style: solid;
-    background-color: #2f3139;
 }
 
 dialog {
-    color: #e8e6e3;
-    border-color: #2f3139;
-    width: 50%;
-    border-radius: 10px;
-    max-width: 800px;
     background-color: #23252c;
+    border-color: #2f3139;
+    border-radius: 10px;
+    color: #e8e6e3;
+    max-width: 800px;
+    width: 50%;
 }
 
 code > pre, samp > pre {
-    color: #e8e6e3;
-    border-radius: 10px;
-    padding: 10px;
     background-color: #14151C;
+    border-radius: 10px;
+    color: #e8e6e3;
+    padding: 10px;
 }
 
 pre > kbd {
@@ -79,19 +79,19 @@ pre > kbd {
 }
 
 kbd {
+    background-color: #2f3139;
     border-color: #2f3139;
     border-radius: 10px;
+    border-style: outset;
     font-weight: bold;
     padding: 5px;
-    border-style: outset;
-    background-color: #2f3139;
 }
 
 div:has(> blockquote) {
-    margin: 10px auto;
-    border-radius: 10px;
-    padding: 15px;
     background-color: #2f3139;
+    border-radius: 10px;
+    margin: 10px auto;
+    padding: 15px;
 }
 
 blockquote p::before {
@@ -119,9 +119,9 @@ th, td {
 }
 
 dl {
+    background-color: #14151C;
     border-radius: 10px;
     padding: 10px;
-    background-color: #14151C;
 }
 
 dl > dt {
@@ -141,8 +141,8 @@ s {
 }
 
 fieldset {
-    border-radius: 10px;
     background-color: #1E2028;
+    border-radius: 10px;
 }
 
 fieldset > legend {
@@ -150,19 +150,19 @@ fieldset > legend {
 }
 
 .container-flex {
-    justify-content: space-evenly;
-    display: flex;
     align-items: baseline;
+    display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
     text-align: center;
 }
 
 .image-clickable-link {
-    margin: 5px 5px;
-    width: 5rem;
     display: inline-flex;
+    margin: 5px 5px;
     max-width: 150px;
     padding: 5px;
+    width: 5rem;
 }
 
 .code-showcase-language-image {
@@ -171,32 +171,32 @@ fieldset > legend {
 }
 
 .container-code-showcase {
-    justify-content: center;
-    display: flex;
     align-items: center;
+    display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .code-showcase-element {
     background: #23252c;
-    margin: 5px 5px;
-    min-width: 300px;
-    width: 30%;
     border-radius: 10px;
     display: inline-block;
+    margin: 5px 5px;
     max-width: 500px;
+    min-width: 300px;
     padding: 10px;
+    width: 30%;
 }
 
 .div-menu-bar-container {
+    background-color: #23252c;
+    display: flex;
+    height: 72px;
+    left: 0;
     padding-left: 10px;
     position: fixed;
-    width: 100%;
-    left: 0;
-    display: flex;
     top: 0;
-    height: 72px;
-    background-color: #23252c;
+    width: 100%;
 }
 
 a:link {
@@ -230,28 +230,28 @@ progress {
 }
 
 progress::-webkit-progress-bar {
-    border-radius: 10px;
     background-color: #e8e6e3;
+    border-radius: 10px;
 }
 
 progress::-webkit-progress-value {
-    border-radius: 10px;
     background-color: HotPink;
+    border-radius: 10px;
 }
 
 progress::-moz-progress-bar {
-    border-radius: 10px;
     background-color: HotPink;
+    border-radius: 10px;
 }
 
 meter {
-    background: var(--background);
-    border-color: #e8e6e3;
     --background: #e8e6e3;
     --optimum: ForestGreen;
     --sub-optimum: Gold;
-    border-radius: 10px;
     --sub-sub-optimum: Crimson;
+    background: var(--background);
+    border-color: #e8e6e3;
+    border-radius: 10px;
     border-width: 2px;
 }
 
@@ -287,23 +287,23 @@ meter::-webkit-meter-even-less-good-value {
 }
 
 button {
-    color: #e8e6e3;
-    margin: 4px 2px;
-    font-size: 20px;
-    transition: 0.3s;
-    border-radius: 10px;
-    display: inline-block;
-    border: none;
-    padding: 10px 20px;
     background-color: #2f3139;
+    border-radius: 10px;
+    border: none;
+    color: #e8e6e3;
     cursor: pointer;
-    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    padding: 10px 20px;
     text-align: center;
+    text-decoration: none;
+    transition: 0.3s;
 }
 
 button:hover {
-    transition: 0.1s;
     background-color: #23252c;
+    transition: 0.1s;
 }
 
 button:active {
@@ -311,23 +311,23 @@ button:active {
 }
 
 .button {
-    color: #e8e6e3;
-    margin: 4px 2px;
-    font-size: 20px;
-    transition: 0.3s;
-    border-radius: 10px;
-    display: inline-block;
-    border: none;
-    padding: 10px 20px;
     background-color: #2f3139;
+    border-radius: 10px;
+    border: none;
+    color: #e8e6e3;
     cursor: pointer;
-    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    padding: 10px 20px;
     text-align: center;
+    text-decoration: none;
+    transition: 0.3s;
 }
 
 .button:hover {
-    transition: 0.1s;
     background-color: #23252c;
+    transition: 0.1s;
 }
 
 .button:active {
@@ -335,42 +335,45 @@ button:active {
 }
 
 .text-gradient-one {
-    background: linear-gradient(45deg, HotPink, MistyRose);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    background: linear-gradient(45deg, HotPink, MistyRose);
 }
 
 .text-gradient-two {
-    background: linear-gradient(45deg, MistyRose, LightPink);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    background: linear-gradient(45deg, MistyRose, LightPink);
+}
+
+.text-gradient-background-rainbow {
+    background: linear-gradient(to right, rgb(225, 53, 53), rgb(229, 161, 60), rgb(216, 228, 59), rgb(80, 204, 223), rgb(70, 141, 222), rgb(139, 86, 245), rgb(192, 62, 239), rgb(214, 61, 194));
 }
 
 .text-gradient-rainbow {
-    background: linear-gradient(to right, rgb(225, 53, 53), rgb(229, 161, 60), rgb(216, 228, 59), rgb(80, 204, 223), rgb(70, 141, 222), rgb(139, 86, 245), rgb(192, 62, 239), rgb(214, 61, 194));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
 
 .div-centering-outer {
-    position: absolute;
-    width: 100%;
-    left: 0;
     display: table;
-    top: calc(72px);
     height: calc(100% - 72px);
+    left: 0;
+    position: absolute;
+    top: calc(72px);
+    width: 100%;
 }
 
 .div-centering-middle {
-    vertical-align: middle;
     display: table-cell;
+    vertical-align: middle;
 }
 
 .div-centering-inner {
-    width: 100%;
-    margin-right: auto;
     margin-left: auto;
+    margin-right: auto;
+    width: 100%;
 }
