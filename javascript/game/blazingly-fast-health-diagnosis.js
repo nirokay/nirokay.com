@@ -2,6 +2,7 @@
 const idLanguageVar = "page-language-variable";
 const idDiagnosisName = "diagnosis-name";
 const idLoadingText = "loading-text";
+const idDiagnosisResultText = "diagnosis-result-text";
 const idPrefixQuestionNumber = "quiz-question-nr-";
 const idSuffixQuestionYouTrustEverythingOnTheInternet = "nah-scratch-that-this-stays-on";
 const idPageLanguage = "page-language-variable";
@@ -12,6 +13,8 @@ var Section;
     Section["idSectionComputing"] = "section-computing-results";
     Section["idSectionShowingResults"] = "section-showing-results";
 })(Section || (Section = {}));
+const soundTada = new Audio("../../resources/sounds/games/ai-doctor-diagnosis/tada.mp3");
+soundTada.volume = 0.8;
 let language = "enGB";
 /**
  * Sets the `language` variable, used for retrieving illness names
@@ -34,32 +37,52 @@ function ill(enGB, deDE) {
 }
 const illnesses = [
     ill("Kidney Failure", "Nierenversagen"),
+    ill("Meningitis", "Hirnhautentzündung"),
     ill("Heart Failure", "Herzversagen"),
-    ill("Breast Cancer", "Brustkrebs"),
-    ill("Skin Cancer", "Hautkrebs"),
+    ill("Tollwut", "Rabies"),
+    ill("Tuberculosis", "Tuberkulose"),
     ill("Lung Cancer", "Lungenkrebs"),
-    ill("Paper Cut :( ouch", "Papierschnittwunde :( aua")
+    ill("Paper Cut :( ouch ;-;", "Papierschnittwunde :( aua ;-;"),
+    ill("Heart attack", "Herzinfarkt"),
+    ill("Dementia", "Demenz"),
+    ill("Brain Bleeding", "Hirnblutung"),
+    ill("Liver Cirrhosis", "Leberzirrhose"),
+    ill("Pneumonia", "Lungenentzündung"),
+    ill("Ebola", "Ebola"),
+    ill("Breast Cancer", "Brustkrebs"),
+    ill("HIV", "HIV"),
+    ill("Swine Flu", "Schweinegrippe"),
+    ill("Parkinson's Disease", "Parkinson-Krankheit"),
+    ill("Malaria", "Malaria"),
+    ill("Leprosy", "Lepra")
 ];
 const fatalIllnesses = {
     noSymptoms: ill("Death", "Tod"),
     allSymptoms: ill("100% Healthy", "100% Gesund")
 };
-function getAccurateDiagnosisOneHundredPercentNotACompletelyRandomPickFromAList() {
-    let symptomCount = 0;
-    let checkboxCount = 0;
-    let defaultIllness = ill("Mysterious Disease", "Mysteriöse Krankheit");
-    // Count illness symptoms by checking the checkboxes:
+function everyCheckbox() {
+    let result = [];
     for (let i = 0; i < 1024; i++) {
         const id = idPrefixQuestionNumber + i.toString();
         let element = document.getElementById(id);
         if (element == undefined || element == null)
             break;
+        result.push(element);
+    }
+    return result;
+}
+function getAccurateDiagnosisOneHundredPercentNotACompletelyRandomPickFromAList() {
+    let symptomCount = 0;
+    let checkboxCount = 0;
+    let defaultIllness = ill("Mysterious Disease", "Mysteriöse Krankheit");
+    // Count illness symptoms by checking the checkboxes:
+    everyCheckbox().forEach((element) => {
         if (element.checked)
             symptomCount++;
-        checkboxCount++;
-    }
+        checkboxCount++; // could be done with `.length`, but im freaky
+    });
     // Pick ~~a random~~ *the correct* disease:
-    let illnessIndex = checkboxCount % illnesses.length;
+    let illnessIndex = symptomCount % illnesses.length;
     let totallyAccurateDiagnosis = illnesses[illnessIndex];
     // Override for fatal situations (being healthy is counted as fatal, as it should be):
     switch (symptomCount) {
@@ -79,7 +102,6 @@ function getAccurateDiagnosisOneHundredPercentNotACompletelyRandomPickFromAList(
  */
 function showOnlySection(toShow) {
     Object.values(Section).forEach(section => {
-        console.log(section, toShow, section === toShow);
         let visibility = "none";
         if (section === toShow)
             visibility = "initial";
@@ -93,17 +115,44 @@ function showOnlySection(toShow) {
     // Ensure checkbox is always checked:
     checkSillyCheckbox();
 }
+function setDiagnosisText(text, emojiPrefix = "", emojiSuffix = "") {
+    let element = document.getElementById(idDiagnosisResultText);
+    if (element == null || element == undefined)
+        return;
+    // Wonderful stuff:
+    if (emojiPrefix != "" || emojiSuffix != "") {
+        if (emojiPrefix != "" && emojiSuffix == "")
+            emojiSuffix = emojiPrefix;
+        if (emojiPrefix == "" && emojiSuffix != "")
+            emojiPrefix = emojiSuffix;
+    }
+    if (emojiPrefix != "")
+        emojiPrefix = emojiPrefix + " ";
+    if (emojiSuffix != "")
+        emojiSuffix = " " + emojiSuffix;
+    element.innerText = emojiPrefix + text + emojiSuffix;
+}
+/**
+ * Gets called by `spinLoadingText()` after a short waiting time
+ */
+function switchToResults() {
+    var _a;
+    showOnlySection(Section.idSectionShowingResults);
+    let result = document.getElementById(idDiagnosisResultText);
+    if (result == null || result == undefined)
+        return;
+    result.classList.add("animated");
+    result.classList.add("intensifies");
+    const illness = getAccurateDiagnosisOneHundredPercentNotACompletelyRandomPickFromAList();
+    const illnessName = (_a = illness[language]) !== null && _a !== void 0 ? _a : "???";
+    setDiagnosisText(illnessName, "🎉", "🥳");
+    soundTada.play();
+}
 /**
  * Activates visibility of `Section.idSectionShowingResults`
  */
 function spinLoadingText() {
     let element = document.getElementById(idLoadingText);
-    /**
-     * Gets waited on and displays results
-     */
-    function switchToResults() {
-        showOnlySection(Section.idSectionShowingResults);
-    }
     if (element != null) {
         element.classList.add("animated");
         element.classList.add("twister");
@@ -117,6 +166,10 @@ function spinLoadingText() {
  * Invoked via button -> Shows question
  */
 function startQuiz() {
+    // Remove checked boxes:
+    everyCheckbox().forEach((element) => {
+        element.checked = false;
+    });
     showOnlySection(Section.idSectionQuiz);
 }
 /**
@@ -154,7 +207,7 @@ function sillyCheckbox() {
     element.addEventListener("change", () => {
         setTimeout(() => {
             element.checked = true;
-        }, 200);
+        }, 100);
     });
 }
 window.onload = () => {
