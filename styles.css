@@ -4,7 +4,7 @@
  * @source https://github.com/nirokay/src.nirokay.com
  * @website https://nirokay.com
  * HTML and CSS is generated using https://github.com/nirokay/websitegenerator
- * Generated at 2025-02-04 @ 11:26.43
+ * Generated at 2025-03-18 @ 09:35.45
 */
 
 html {
@@ -30,8 +30,8 @@ article > p {
 }
 
 img {
-    border-radius: 10px;
     color: #979592;
+    border-radius: 10px;
 }
 
 ul > li {
@@ -40,38 +40,38 @@ ul > li {
 
 select {
     background-color: #2f3139;
+    margin: 20px;
+    color: #e8e6e3;
     border-radius: 10px;
     border-style: solid;
     border: 3px solid #2f3139;
-    color: #e8e6e3;
-    margin: 20px;
 }
 
 textarea, input {
-    accent-color: HotPink;
     background-color: #2f3139;
-    border-color: #2f3139;
-    border-radius: 10px;
-    border-style: solid;
-    color: #e8e6e3;
+    accent-color: HotPink;
     margin: 4px 5px;
+    color: #e8e6e3;
     padding: 5px 10px;
+    border-radius: 10px;
+    border-color: #2f3139;
+    border-style: solid;
 }
 
 dialog {
     background-color: #23252c;
-    border-color: #2f3139;
-    border-radius: 10px;
     color: #e8e6e3;
     max-width: 800px;
+    border-radius: 10px;
+    border-color: #2f3139;
     width: 50%;
 }
 
 code > pre, samp > pre {
     background-color: #14151C;
-    border-radius: 10px;
     color: #e8e6e3;
     padding: 10px;
+    border-radius: 10px;
 }
 
 pre > kbd {
@@ -80,18 +80,18 @@ pre > kbd {
 
 kbd {
     background-color: #2f3139;
-    border-color: #2f3139;
-    border-radius: 10px;
-    border-style: outset;
     font-weight: bold;
     padding: 5px;
+    border-radius: 10px;
+    border-color: #2f3139;
+    border-style: outset;
 }
 
 div:has(> blockquote) {
     background-color: #2f3139;
-    border-radius: 10px;
     margin: 10px auto;
     padding: 15px;
+    border-radius: 10px;
 }
 
 blockquote p::before {
@@ -120,8 +120,8 @@ th, td {
 
 dl {
     background-color: #14151C;
-    border-radius: 10px;
     padding: 10px;
+    border-radius: 10px;
 }
 
 dl > dt {
@@ -150,18 +150,18 @@ fieldset > legend {
 }
 
 .container-flex {
-    align-items: baseline;
-    display: flex;
+    text-align: center;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    text-align: center;
+    align-items: baseline;
+    display: flex;
 }
 
 .image-clickable-link {
-    display: inline-flex;
     margin: 5px 5px;
-    max-width: 150px;
     padding: 5px;
+    max-width: 150px;
+    display: inline-flex;
     width: 5rem;
 }
 
@@ -171,62 +171,62 @@ fieldset > legend {
 }
 
 .container-code-showcase {
-    align-items: center;
-    display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 .code-showcase-element {
-    background: #23252c;
-    border-radius: 10px;
-    display: inline-block;
     margin: 5px 5px;
-    max-width: 500px;
-    min-width: 300px;
     padding: 10px;
+    max-width: 500px;
+    border-radius: 10px;
+    background: #23252c;
+    min-width: 300px;
+    display: inline-block;
     width: 30%;
 }
 
 .div-menu-bar-container {
-    background-color: #23252c;
-    display: flex;
-    height: 72px;
     left: 0;
+    background-color: #23252c;
+    height: 72px;
+    top: 0;
     padding-left: 10px;
     position: fixed;
-    top: 0;
+    display: flex;
     width: 100%;
 }
 
 a:link {
-    color: HotPink;
     text-decoration-color: #e8e6e3;
+    color: HotPink;
     text-decoration: none;
 }
 
 a:visited {
-    color: HotPink;
     text-decoration-color: #e8e6e3;
+    color: HotPink;
     text-decoration: none;
 }
 
 a:hover {
-    color: LightPink;
     text-decoration-color: #e8e6e3;
+    color: LightPink;
     text-decoration: underline;
 }
 
 a:active {
-    color: MistyRose;
     text-decoration-color: #e8e6e3;
+    color: MistyRose;
     text-decoration: underline;
 }
 
 progress {
-    border-color: #e8e6e3;
-    border-radius: 10px;
     border-width: 2px;
+    border-radius: 10px;
+    border-color: #e8e6e3;
 }
 
 progress::-webkit-progress-bar {
@@ -245,21 +245,21 @@ progress::-moz-progress-bar {
 }
 
 meter {
-    --background: #e8e6e3;
-    --optimum: ForestGreen;
-    --sub-optimum: Gold;
     --sub-sub-optimum: Crimson;
+    border-width: 2px;
+    --sub-optimum: Gold;
+    border-radius: 10px;
     background: var(--background);
     border-color: #e8e6e3;
-    border-radius: 10px;
-    border-width: 2px;
+    --background: #e8e6e3;
+    --optimum: ForestGreen;
 }
 
 meter::-webkit-meter-bar {
+    border-width: 2px;
+    border-radius: 10px;
     background: var(--background);
     border-color: #e8e6e3;
-    border-radius: 10px;
-    border-width: 2px;
 }
 
 meter:-moz-meter-optimum::-moz-meter-bar {
@@ -288,17 +288,17 @@ meter::-webkit-meter-even-less-good-value {
 
 button {
     background-color: #2f3139;
-    border-radius: 10px;
-    border: none;
+    margin: 4px 2px;
     color: #e8e6e3;
+    text-align: center;
+    padding: 10px 20px;
+    transition: 0.3s;
+    border-radius: 10px;
+    text-decoration: none;
     cursor: pointer;
     display: inline-block;
+    border: none;
     font-size: 20px;
-    margin: 4px 2px;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    transition: 0.3s;
 }
 
 button:hover {
@@ -312,17 +312,17 @@ button:active {
 
 .button {
     background-color: #2f3139;
-    border-radius: 10px;
-    border: none;
+    margin: 4px 2px;
     color: #e8e6e3;
+    text-align: center;
+    padding: 10px 20px;
+    transition: 0.3s;
+    border-radius: 10px;
+    text-decoration: none;
     cursor: pointer;
     display: inline-block;
+    border: none;
     font-size: 20px;
-    margin: 4px 2px;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    transition: 0.3s;
 }
 
 .button:hover {
@@ -335,21 +335,21 @@ button:active {
 }
 
 .text-gradient-one {
+    background: linear-gradient(45deg, HotPink, MistyRose);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    background: linear-gradient(45deg, HotPink, MistyRose);
 }
 
 .text-gradient-two {
+    background: linear-gradient(45deg, MistyRose, LightPink);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    background: linear-gradient(45deg, MistyRose, LightPink);
 }
 
 .text-gradient-background-rainbow {
-    background: linear-gradient(to right, rgb(225, 53, 53), rgb(229, 161, 60), rgb(216, 228, 59), rgb(80, 204, 223), rgb(70, 141, 222), rgb(139, 86, 245), rgb(192, 62, 239), rgb(214, 61, 194));
+    background: linear-gradient(to right, #F46ECE, #F4716E, #F4956E, #F4E96E, #8BF46E, #6EF4D0, #6EADF4, #776EF4, #C36EF4);
 }
 
 .text-gradient-rainbow {
@@ -359,11 +359,11 @@ button:active {
 }
 
 .div-centering-outer {
-    display: table;
-    height: calc(100% - 72px);
     left: 0;
-    position: absolute;
+    height: calc(100% - 72px);
     top: calc(72px);
+    position: absolute;
+    display: table;
     width: 100%;
 }
 
@@ -373,7 +373,7 @@ button:active {
 }
 
 .div-centering-inner {
-    margin-left: auto;
     margin-right: auto;
     width: 100%;
+    margin-left: auto;
 }

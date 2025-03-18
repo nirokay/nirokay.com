@@ -1,0 +1,39 @@
+/**
+ * @name nirokay.com stylesheet
+ * @author nirokay
+ * @source https://github.com/nirokay/src.nirokay.com
+ * @website https://nirokay.com
+ * HTML and CSS is generated using https://github.com/nirokay/websitegenerator
+ * Generated at 2025-03-18 @ 09:35.45
+*/
+
+.thesis-question-div {
+    background-color: #23252c;
+    margin: 20px;
+    padding: 20px;
+    border-width: 3px;
+    border-radius: 20px;
+    border-color: #e8e6e3;
+    border-style: solid;
+}
+
+.thesis-wrong-answer {
+    border-color: #F4716E;
+}
+
+.thesis-correct-answer {
+    border-color: #8BF46E;
+}
+
+.true-false-button {
+    color: Black;
+}
+
+.quote-bullshit {
+    font-size: 1.5em;
+}
+
+.author-image {
+    max-width: 200px;
+    max-height: 200px;
+}
