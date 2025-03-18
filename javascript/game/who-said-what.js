@@ -1,4 +1,6 @@
 "use strict";
+// Settings:
+const questionsWithoutRepeating = 10;
 // Questions:
 const idThesisDivPrefix = "id-thesis-div-";
 const idThesisButtonsDiv = "id-thesis-buttons-";
@@ -76,7 +78,7 @@ function increaseScore(id, correct) {
 let lastQuestionsBuffer = [];
 function addToLastQuestionBuffer(id) {
     lastQuestionsBuffer.push(id);
-    if (lastQuestionsBuffer.length > 5)
+    if (lastQuestionsBuffer.length > questionsWithoutRepeating)
         lastQuestionsBuffer.shift();
 }
 function getQuestion(id) {
