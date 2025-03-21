@@ -1,6 +1,6 @@
 "use strict";
 // Settings:
-const questionsWithoutRepeating = 10;
+const questionsWithoutRepeating = 25;
 // Questions:
 const idThesisDivPrefix = "id-thesis-div-";
 const idThesisButtonsDiv = "id-thesis-buttons-";
