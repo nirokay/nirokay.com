@@ -4,7 +4,7 @@
  * @source https://github.com/nirokay/src.nirokay.com
  * @website https://nirokay.com
  * HTML and CSS is generated using https://github.com/nirokay/websitegenerator
- * Generated at 2025-03-21 @ 09:26.26
+ * Generated at 2025-03-21 @ 10:13.49
 */
 
 html {
@@ -31,7 +31,7 @@ article > p {
 
 img {
     color: #979592;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 ul > li {
@@ -42,8 +42,7 @@ select {
     background-color: #2f3139;
     margin: 20px;
     color: #e8e6e3;
-    border-radius: 10px;
-    border-style: solid;
+    border-radius: 15px;
     border: 3px solid #2f3139;
 }
 
@@ -53,7 +52,7 @@ textarea, input {
     margin: 4px 5px;
     color: #e8e6e3;
     padding: 5px 10px;
-    border-radius: 10px;
+    border-radius: 15px;
     border-color: #2f3139;
     border-style: solid;
 }
@@ -62,7 +61,7 @@ dialog {
     background-color: #23252c;
     color: #e8e6e3;
     max-width: 800px;
-    border-radius: 10px;
+    border-radius: 15px;
     border-color: #2f3139;
     width: 50%;
 }
@@ -71,7 +70,7 @@ code > pre, samp > pre {
     background-color: #14151C;
     color: #e8e6e3;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 pre > kbd {
@@ -82,7 +81,7 @@ kbd {
     background-color: #2f3139;
     font-weight: bold;
     padding: 5px;
-    border-radius: 10px;
+    border-radius: 15px;
     border-color: #2f3139;
     border-style: outset;
 }
@@ -91,7 +90,7 @@ div:has(> blockquote) {
     background-color: #2f3139;
     margin: 10px auto;
     padding: 15px;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 blockquote p::before {
@@ -114,14 +113,26 @@ q {
     font-style: italic;
 }
 
+table {
+    background-color: #23252c;
+    padding: 5px;
+    border-radius: 15px;
+}
+
 th, td {
     padding: 10px;
+}
+
+thead > tr > th {
+    background-color: #2f3139;
+    text-align: start;
+    border-radius: 15px;
 }
 
 dl {
     background-color: #14151C;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 dl > dt {
@@ -142,7 +153,7 @@ s {
 
 fieldset {
     background-color: #1E2028;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 fieldset > legend {
@@ -181,7 +192,7 @@ fieldset > legend {
     margin: 5px 5px;
     padding: 10px;
     max-width: 500px;
-    border-radius: 10px;
+    border-radius: 15px;
     background: #23252c;
     min-width: 300px;
     display: inline-block;
@@ -225,30 +236,30 @@ a:active {
 
 progress {
     border-width: 2px;
-    border-radius: 10px;
+    border-radius: 15px;
     border-color: #e8e6e3;
 }
 
 progress::-webkit-progress-bar {
     background-color: #e8e6e3;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 progress::-webkit-progress-value {
     background-color: HotPink;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 progress::-moz-progress-bar {
     background-color: HotPink;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 meter {
     --sub-sub-optimum: Crimson;
     border-width: 2px;
     --sub-optimum: Gold;
-    border-radius: 10px;
+    border-radius: 15px;
     background: var(--background);
     border-color: #e8e6e3;
     --background: #e8e6e3;
@@ -257,7 +268,7 @@ meter {
 
 meter::-webkit-meter-bar {
     border-width: 2px;
-    border-radius: 10px;
+    border-radius: 15px;
     background: var(--background);
     border-color: #e8e6e3;
 }
@@ -293,7 +304,7 @@ button {
     text-align: center;
     padding: 10px 20px;
     transition: 0.3s;
-    border-radius: 10px;
+    border-radius: 15px;
     text-decoration: none;
     cursor: pointer;
     display: inline-block;
@@ -317,7 +328,7 @@ button:active {
     text-align: center;
     padding: 10px 20px;
     transition: 0.3s;
-    border-radius: 10px;
+    border-radius: 15px;
     text-decoration: none;
     cursor: pointer;
     display: inline-block;
