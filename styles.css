@@ -4,7 +4,7 @@
  * @source https://github.com/nirokay/src.nirokay.com/
  * @website https://nirokay.com/
  * HTML and CSS is generated using https://github.com/nirokay/websitegenerator/
- * Generated at 2025-06-03 @ 08:41.47
+ * Generated at 2025-06-27 @ 09:57.15
 */
 
 html {
@@ -27,6 +27,21 @@ header > p {
 
 article > p {
     text-align: left;
+}
+
+article > section {
+    background-color: #23252c;
+    margin: 30px;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+article > section :first-child {
+    margin-top: 0px !important;
+}
+
+article > section :last-child {
+    margin-bottom: 0px !important;
 }
 
 img {
