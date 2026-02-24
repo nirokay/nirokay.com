@@ -1,21 +1,88 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <!-- HTML and CSS is generated using https://github.com/nirokay/websitegenerator -->
-    <meta charset='utf-8' />
-    <meta content='width=device-width, initial-scale=1' name='viewport' />
-    <title>Findus Liebes-Rechner</title>
-    <meta content='Findus Liebes-Rechner' property='og:title' />
-    <meta content='Dummes Spiel, das ausrechnet, ob Findus, der Kater, dich liebt.' name='description' />
-    <meta content='Dummes Spiel, das ausrechnet, ob Findus, der Kater, dich liebt.' property='og:description' />
-    <link href='/resources/images//favicon.gif' rel='icon' sizes='32x32' type='image/gif' />
-    <link href='/styles.css' rel='stylesheet' title='Absolute path to global css' />
-    <script src='/javascript/menu-bar.js'></script>
-    <script defer src='/javascript/game/findus.js'></script>
-    <meta content='/resources/images/games/findus/success.jpg' property='og:image' />
-</head>
-<body>
-    <div class='div-centering-outer'><div class='div-centering-middle'><div class='div-centering-inner'><header><h1>Findus Liebes-Rechner</h1><p>Dummes Spiel, das ausrechnet, ob Findus, der Kater, dich liebt.</p></header><article><dialog id='good-person'><p>YIPPIE! Findus liebt dich sehr! Gute Arbeit!!! :3</p><img alt='Image success' src='/resources/images/games/findus/success.jpg' width='200px' /></dialog><dialog id='bad-person'><p>Igitt, Findus findet dich eklig. Bitte arbeite an deiner Persönlichkeit, um ein besserer Mensch zu werden...</p><img alt='Image failure' src='/resources/images/games/findus/failure.jpg' width='200px' /></dialog><fieldset><legend>Bitte kreuze die zutreffenden Felder an:</legend><div><label for='question_8'><input name='question_8' type='checkbox' />Magst du Katzen?</label></div><div><label for='question_9'><input name='question_9' type='checkbox' />Denkst du, dass Katzen dich mögen?</label></div><div><label for='question_10'><input name='question_10' type='checkbox' />Katzen sind Hunden überlegen.</label></div><div><label for='question_11'><input name='question_11' type='checkbox' />Hast du schonmal Katzenfutter probiert?</label></div><div><label for='question_12'><input id='i-would-give-food-to-findus' name='question_12' type='checkbox' />Würdest du Findus füttern?</label></div><div><label for='question_13'><input name='question_13' type='checkbox' />Ist dein finanzieller Status stabil?</label></div><div><label for='question_14'><input id='oh-hell-yeah-lets-go' name='question_14' type='checkbox' />Würdest du deine Kreditkarteninformationen in einem Internetfragebogen preisgeben?</label></div><div><label for='question_15'><input id='gimme-gimme-more-gimme-gimme-gimme-more' name='question_15' placeholder='Bitte hier eingeben :)' type='text' /></label></div><button onclick='submitForm();'>Einreichen</button></fieldset></article></div></div></div>
-    <div class='container-flex div-menu-bar-container' style='justify-content:flex-start;'><nav class='container-flex' style='display:flex;'><h2><a href='/' style='color:#e8e6e3;justify-self:flex-start;'>nirokay.com</a> › <a href='/games.html' style='color:#e8e6e3;justify-self:flex-start;'>Games</a></h2></nav><select id='id-menu-bar' name='Menu bar' onchange='changeToSelectedPage();' onfocus='setSelectedToNavigation();' style='justify-self:flex-end;'><option selected value='--ignore--'>🚀 Navigation</option><option value='HzgShowAround/index.html'>🔍 HzgShowAround</option><option value='index.html'>Home</option><option value='links.html'>Links</option><option value='projects.html'>Projects</option><option value='games.html'>Games</option></select></div>
-</body>
+    <head>
+        <!--
+            HTML and CSS is generated using https://github.com/nirokay/cattag
+        --->
+        <meta charset='utf-8' />
+        <meta content='width=device-width, initial-scale=1' name='viewport' />
+        <title>Findus Liebes-Rechner</title>
+        <meta content='Findus Liebes-Rechner' property='og:title' />
+        <meta content='Dummes Spiel, das ausrechnet, ob Findus, der Kater, dich liebt.' property='description' />
+        <meta content='Dummes Spiel, das ausrechnet, ob Findus, der Kater, dich liebt.' property='og:description' />
+        <link href='/resources/images//favicon.gif' sizes='32x32' type='image/gif' />
+        <link href='/styles.css' rel='stylesheet' title='Absolute path to global css' />
+        <script defer src='/javascript/menu-bar.js'></script>
+        <script defer src='/javascript/game/findus.js'></script>
+        <meta content='/resources/images/games/findus/success.jpg' property='og:image' />
+    </head>
+    <body>
+        <div class='div-centering-outer'><div class='div-centering-middle'><div class='div-centering-inner'>
+            <header>
+                <h1>Findus Liebes-Rechner</h1>
+                <p>Dummes Spiel, das ausrechnet, ob Findus, der Kater, dich liebt.</p>
+            </header>
+            <article>
+                <dialog  id='good-person'>
+                    <p>YIPPIE! Findus liebt dich sehr! Gute Arbeit!!! :3</p>
+                    <img alt='Image success' src='/resources/images/games/findus/success.jpg' width='200px' />
+                </dialog>
+                <dialog  id='bad-person'>
+                    <p>Igitt, Findus findet dich eklig. Bitte arbeite an deiner Persönlichkeit, um ein besserer Mensch zu werden...</p>
+                    <img alt='Image failure' src='/resources/images/games/findus/failure.jpg' width='200px' />
+                </dialog>
+                <fieldset>
+                    <legend>Bitte kreuze die zutreffenden Felder an:</legend>
+                    <div><label for='question_8'>
+                        <input name='question_8' type='checkbox' />
+                        Magst du Katzen?
+                    </label></div>
+                    <div><label for='question_9'>
+                        <input name='question_9' type='checkbox' />
+                        Denkst du, dass Katzen dich mögen?
+                    </label></div>
+                    <div><label for='question_10'>
+                        <input name='question_10' type='checkbox' />
+                        Katzen sind Hunden überlegen.
+                    </label></div>
+                    <div><label for='question_11'>
+                        <input name='question_11' type='checkbox' />
+                        Hast du schonmal Katzenfutter probiert?
+                    </label></div>
+                    <div><label for='question_12'>
+                        <input id='i-would-give-food-to-findus' name='question_12' type='checkbox' />
+                        Würdest du Findus füttern?
+                    </label></div>
+                    <div><label for='question_13'>
+                        <input name='question_13' type='checkbox' />
+                        Ist dein finanzieller Status stabil?
+                    </label></div>
+                    <div><label for='question_14'>
+                        <input id='oh-hell-yeah-lets-go' name='question_14' type='checkbox' />
+                        Würdest du deine Kreditkarteninformationen in einem Internetfragebogen preisgeben?
+                    </label></div>
+                    <div><label for='question_15'>
+                        <input id='gimme-gimme-more-gimme-gimme-gimme-more' name='question_15' placeholder='Bitte hier eingeben :)' type='text' />
+                        
+                    </label></div>
+                    <button onclick='submitForm();' type='button'>Einreichen</button>
+                </fieldset>
+            </article>
+        </div></div></div>
+        <div class='div-menu-bar-container container-flex' style='justify-content: flex-start;'>
+            <nav class='container-flex' style='display: flex;'><h2>
+                <a href='/' style='color: #e8e6e3; justify-self: flex-start;'>nirokay.com</a>
+                 › 
+                <a href='/games.html' style='color: #e8e6e3; justify-self: flex-start;'>Games</a>
+            </h2></nav>
+            <select id='id-menu-bar' onchange='changeToSelectedPage();' onfocus='setSelectedToNavigation();' style='justify-self: flex-end;'>
+                <option selected value='--ignore--'>🚀 Navigation</option>
+                <option value='HzgShowAround/index.html'>🔍 HzgShowAround</option>
+                <option value='index.html'>Home</option>
+                <option value='links.html'>Links</option>
+                <option value='projects.html'>Projects</option>
+                <option value='games.html'>Games</option>
+            </select>
+        </div>
+    </body>
 </html>

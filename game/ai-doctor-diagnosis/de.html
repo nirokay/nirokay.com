@@ -1,21 +1,179 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <!-- HTML and CSS is generated using https://github.com/nirokay/websitegenerator -->
-    <meta charset='utf-8' />
-    <meta content='width=device-width, initial-scale=1' name='viewport' />
-    <title>K.I. Gesundheitsdiagnose</title>
-    <meta content='K.I. Gesundheitsdiagnose' property='og:title' />
-    <meta content='✨ Ultra super-duper schnelles KI Tool, um JEGLICHE Erkrankung zu diagnostizieren, besser als Ihr Arzt!! 🚀' name='description' />
-    <meta content='✨ Ultra super-duper schnelles KI Tool, um JEGLICHE Erkrankung zu diagnostizieren, besser als Ihr Arzt!! 🚀' property='og:description' />
-    <link href='/resources/images//favicon.gif' rel='icon' sizes='32x32' type='image/gif' />
-    <link href='/styles.css' rel='stylesheet' title='Absolute path to global css' />
-    <script src='/javascript/menu-bar.js'></script>
-    <link href='https://tholman.com/obnoxious/obnoxious.css' rel='stylesheet' />
-    <script defer src='/javascript/game/blazingly-fast-health-diagnosis.js'></script>
-</head>
-<body>
-    <div class='div-centering-outer'><div class='div-centering-middle'><div class='div-centering-inner'><var id='page-language-variable' style='display:none;'>deDE</var><header><h1>K.I. Gesundheitsdiagnose</h1><p>✨ Ultra super-duper schnelles KI Tool, um JEGLICHE Erkrankung zu diagnostizieren, besser als Ihr Arzt!! 🚀</p></header><article style='margin:50px 10%;'><div id='section-start-quiz' style='display:initial;'><p style='text-align:center;'>Unser KI Modell ist exklusiv auf legal-fragwürdig beschaffenen Patienteninformation von Data Brokern und Gesundheitsversicherungen trainiert. Dies erlaubt uns Ihnen eine 99.999% korrekte Diagnosis zu Stellen!<br />9 von 10 Ärzte empfehlen unser KI Modell<sup>[Quelle gebraucht]</sup>!</p><div id='button-quiz-start' style='margin:20px auto;text-align:center;'><button onclick='startQuiz();'>Quiz starten</button></div></div><div id='section-doing-quiz' style='display:none;'><fieldset><legend>Bitte kreuzen Sie die Symptome an, die Sie leiden lassen:</legend><div><label for='quiz-question-nr-0'><input id='quiz-question-nr-0' type='checkbox' />Abnormale Herzfrequenz</label></div><div><label for='quiz-question-nr-1'><input id='quiz-question-nr-1' type='checkbox' />Abnormale Körpertemperatur</label></div><div><label for='quiz-question-nr-2'><input id='quiz-question-nr-2' type='checkbox' />Abnormale Urinfarbe</label></div><div><label for='quiz-question-nr-3'><input id='quiz-question-nr-3' type='checkbox' />Abnormaler Blutdruck</label></div><div><label for='quiz-question-nr-4'><input id='quiz-question-nr-4' type='checkbox' />Abnormales Schwitzen</label></div><div><label for='quiz-question-nr-5'><input id='quiz-question-nr-5' type='checkbox' />Angstzustände</label></div><div><label for='quiz-question-nr-6'><input id='quiz-question-nr-6' type='checkbox' />Augenschmerzen</label></div><div><label for='quiz-question-nr-7'><input id='quiz-question-nr-7' type='checkbox' />Bauchschmerzen</label></div><div><label for='quiz-question-nr-8'><input id='quiz-question-nr-8' type='checkbox' />Blähungen</label></div><div><label for='quiz-question-nr-9'><input id='quiz-question-nr-9' type='checkbox' />Durchfall</label></div><div><label for='quiz-question-nr-10'><input id='quiz-question-nr-10' type='checkbox' />Erbrechen</label></div><div><label for='quiz-question-nr-11'><input id='quiz-question-nr-11' type='checkbox' />Gelenkschmerzen</label></div><div><label for='quiz-question-nr-12'><input id='quiz-question-nr-12' type='checkbox' />Gewichtsabnahme oder -zunahme</label></div><div><label for='quiz-question-nr-13'><input id='quiz-question-nr-13' type='checkbox' />Haarausfall</label></div><div><label for='quiz-question-nr-14'><input id='quiz-question-nr-14' type='checkbox' />Husten</label></div><div><label for='quiz-question-nr-15'><input id='quiz-question-nr-15' type='checkbox' />Häufiges Urinieren</label></div><div><label for='quiz-question-nr-16'><input id='quiz-question-nr-16' type='checkbox' />Juckreiz</label></div><div><label for='quiz-question-nr-17'><input id='quiz-question-nr-17' type='checkbox' />Kopfschmerzen</label></div><div><label for='quiz-question-nr-18'><input id='quiz-question-nr-18' type='checkbox' />Lichtempfindlichkeit</label></div><div><label for='quiz-question-nr-19'><input id='quiz-question-nr-19' type='checkbox' />Muskelschmerzen</label></div><div><label for='quiz-question-nr-20'><input id='quiz-question-nr-20' type='checkbox' />Müdigkeit</label></div><div><label for='quiz-question-nr-21'><input id='quiz-question-nr-21' type='checkbox' />Niesen</label></div><div><label for='quiz-question-nr-22'><input id='quiz-question-nr-22' type='checkbox' />Ohrenschmerzen</label></div><div><label for='quiz-question-nr-23'><input id='quiz-question-nr-23' type='checkbox' />Rückenschmerzen</label></div><div><label for='quiz-question-nr-24'><input id='quiz-question-nr-24' type='checkbox' />Schwindel</label></div><div><label for='quiz-question-nr-25'><input id='quiz-question-nr-25' type='checkbox' />Trockener Mund</label></div><div><label for='quiz-question-nr-26'><input id='quiz-question-nr-26' type='checkbox' />Zahnschmerzen</label></div><div><label for='quiz-question-nr-27'><input id='quiz-question-nr-27' type='checkbox' />Zittern</label></div><div><label for='quiz-question-nr-nah-scratch-that-this-stays-on'><input checked id='quiz-question-nr-nah-scratch-that-this-stays-on' type='checkbox' />Sie glauben Alles, was im Internet steht.</label></div></fieldset><div id='button-quiz-submit' style='margin:20px auto;text-align:center;'><button onclick='submitQuiz();'>Berechnen</button></div></div><div id='section-computing-results' style='display:none;'><h2 class='animated' id='loading-text'>Berechnung läuft...</h2></div><div id='section-showing-results' style='display:none;'><p style='text-align:center;'>Laut unserer 99,999%<small>*</small> korrekten Diagnose, leiden Sie unter</p><h2 id='diagnosis-result-text'>???</h2><p style='text-align:center;'><small>* <u>Falls wir falsch liegen sollten (unmöglich), dann haben Sie halt Pech gehabt!</u></small></p><div id='button-quiz-retry' style='margin:20px auto;text-align:center;'><button onclick='restartQuiz();'>Quiz neustarten</button></div></div></article></div></div></div>
-    <div class='container-flex div-menu-bar-container' style='justify-content:flex-start;'><nav class='container-flex' style='display:flex;'><h2><a href='/' style='color:#e8e6e3;justify-self:flex-start;'>nirokay.com</a> › <a href='/games.html' style='color:#e8e6e3;justify-self:flex-start;'>Games</a></h2></nav><select id='id-menu-bar' name='Menu bar' onchange='changeToSelectedPage();' onfocus='setSelectedToNavigation();' style='justify-self:flex-end;'><option selected value='--ignore--'>🚀 Navigation</option><option value='HzgShowAround/index.html'>🔍 HzgShowAround</option><option value='index.html'>Home</option><option value='links.html'>Links</option><option value='projects.html'>Projects</option><option value='games.html'>Games</option></select></div>
-</body>
+    <head>
+        <!--
+            HTML and CSS is generated using https://github.com/nirokay/cattag
+        --->
+        <meta charset='utf-8' />
+        <meta content='width=device-width, initial-scale=1' name='viewport' />
+        <title>K.I. Gesundheitsdiagnose</title>
+        <meta content='K.I. Gesundheitsdiagnose' property='og:title' />
+        <meta content='✨ Ultra super-duper schnelles KI Tool, um JEGLICHE Erkrankung zu diagnostizieren, besser als Ihr Arzt!! 🚀' property='description' />
+        <meta content='✨ Ultra super-duper schnelles KI Tool, um JEGLICHE Erkrankung zu diagnostizieren, besser als Ihr Arzt!! 🚀' property='og:description' />
+        <link href='/resources/images//favicon.gif' sizes='32x32' type='image/gif' />
+        <link href='/styles.css' rel='stylesheet' title='Absolute path to global css' />
+        <script defer src='/javascript/menu-bar.js'></script>
+        <script defer src='/javascript/game/blazingly-fast-health-diagnosis.js'></script>
+        <link href='https://tholman.com/obnoxious/obnoxious.css' rel='stylesheet' />
+    </head>
+    <body>
+        <div class='div-centering-outer'><div class='div-centering-middle'><div class='div-centering-inner'>
+            <var id='page-language-variable' style='display: none;'>deDE</var>
+            <header>
+                <h1>K.I. Gesundheitsdiagnose</h1>
+                <p>✨ Ultra super-duper schnelles KI Tool, um JEGLICHE Erkrankung zu diagnostizieren, besser als Ihr Arzt!! 🚀</p>
+            </header>
+            <article style='margin: 50px 10%;'>
+                <div id='section-start-quiz' style='display: initial;'>
+                    <p style='text-align: center;'>Unser KI Modell ist exklusiv auf legal-fragwürdig beschaffenen Patienteninformation von Data Brokern und Gesundheitsversicherungen trainiert. Dies erlaubt uns Ihnen eine 99.999% korrekte Diagnosis zu Stellen!
+                    9 von 10 Ärzte empfehlen unser KI Modell<sup>[Quelle gebraucht]</sup>!</p>
+                    <div id='button-quiz-start' style='margin: 20px auto; text-align: center;'><button onclick='startQuiz();' type='button'>Quiz starten</button></div>
+                </div>
+                <div id='section-doing-quiz' style='display: none;'>
+                    <fieldset>
+                        <legend>Bitte kreuzen Sie die Symptome an, die Sie leiden lassen:</legend>
+                        <div><label for type='quiz-question-nr-0'>
+                            <input id='quiz-question-nr-0' type='checkbox' />
+                            Abnormale Herzfrequenz
+                        </label></div>
+                        <div><label for type='quiz-question-nr-1'>
+                            <input id='quiz-question-nr-1' type='checkbox' />
+                            Abnormale Körpertemperatur
+                        </label></div>
+                        <div><label for type='quiz-question-nr-2'>
+                            <input id='quiz-question-nr-2' type='checkbox' />
+                            Abnormale Urinfarbe
+                        </label></div>
+                        <div><label for type='quiz-question-nr-3'>
+                            <input id='quiz-question-nr-3' type='checkbox' />
+                            Abnormaler Blutdruck
+                        </label></div>
+                        <div><label for type='quiz-question-nr-4'>
+                            <input id='quiz-question-nr-4' type='checkbox' />
+                            Abnormales Schwitzen
+                        </label></div>
+                        <div><label for type='quiz-question-nr-5'>
+                            <input id='quiz-question-nr-5' type='checkbox' />
+                            Angstzustände
+                        </label></div>
+                        <div><label for type='quiz-question-nr-6'>
+                            <input id='quiz-question-nr-6' type='checkbox' />
+                            Augenschmerzen
+                        </label></div>
+                        <div><label for type='quiz-question-nr-7'>
+                            <input id='quiz-question-nr-7' type='checkbox' />
+                            Bauchschmerzen
+                        </label></div>
+                        <div><label for type='quiz-question-nr-8'>
+                            <input id='quiz-question-nr-8' type='checkbox' />
+                            Blähungen
+                        </label></div>
+                        <div><label for type='quiz-question-nr-9'>
+                            <input id='quiz-question-nr-9' type='checkbox' />
+                            Durchfall
+                        </label></div>
+                        <div><label for type='quiz-question-nr-10'>
+                            <input id='quiz-question-nr-10' type='checkbox' />
+                            Erbrechen
+                        </label></div>
+                        <div><label for type='quiz-question-nr-11'>
+                            <input id='quiz-question-nr-11' type='checkbox' />
+                            Gelenkschmerzen
+                        </label></div>
+                        <div><label for type='quiz-question-nr-12'>
+                            <input id='quiz-question-nr-12' type='checkbox' />
+                            Gewichtsabnahme oder -zunahme
+                        </label></div>
+                        <div><label for type='quiz-question-nr-13'>
+                            <input id='quiz-question-nr-13' type='checkbox' />
+                            Haarausfall
+                        </label></div>
+                        <div><label for type='quiz-question-nr-14'>
+                            <input id='quiz-question-nr-14' type='checkbox' />
+                            Husten
+                        </label></div>
+                        <div><label for type='quiz-question-nr-15'>
+                            <input id='quiz-question-nr-15' type='checkbox' />
+                            Häufiges Urinieren
+                        </label></div>
+                        <div><label for type='quiz-question-nr-16'>
+                            <input id='quiz-question-nr-16' type='checkbox' />
+                            Juckreiz
+                        </label></div>
+                        <div><label for type='quiz-question-nr-17'>
+                            <input id='quiz-question-nr-17' type='checkbox' />
+                            Kopfschmerzen
+                        </label></div>
+                        <div><label for type='quiz-question-nr-18'>
+                            <input id='quiz-question-nr-18' type='checkbox' />
+                            Lichtempfindlichkeit
+                        </label></div>
+                        <div><label for type='quiz-question-nr-19'>
+                            <input id='quiz-question-nr-19' type='checkbox' />
+                            Muskelschmerzen
+                        </label></div>
+                        <div><label for type='quiz-question-nr-20'>
+                            <input id='quiz-question-nr-20' type='checkbox' />
+                            Müdigkeit
+                        </label></div>
+                        <div><label for type='quiz-question-nr-21'>
+                            <input id='quiz-question-nr-21' type='checkbox' />
+                            Niesen
+                        </label></div>
+                        <div><label for type='quiz-question-nr-22'>
+                            <input id='quiz-question-nr-22' type='checkbox' />
+                            Ohrenschmerzen
+                        </label></div>
+                        <div><label for type='quiz-question-nr-23'>
+                            <input id='quiz-question-nr-23' type='checkbox' />
+                            Rückenschmerzen
+                        </label></div>
+                        <div><label for type='quiz-question-nr-24'>
+                            <input id='quiz-question-nr-24' type='checkbox' />
+                            Schwindel
+                        </label></div>
+                        <div><label for type='quiz-question-nr-25'>
+                            <input id='quiz-question-nr-25' type='checkbox' />
+                            Trockener Mund
+                        </label></div>
+                        <div><label for type='quiz-question-nr-26'>
+                            <input id='quiz-question-nr-26' type='checkbox' />
+                            Zahnschmerzen
+                        </label></div>
+                        <div><label for type='quiz-question-nr-27'>
+                            <input id='quiz-question-nr-27' type='checkbox' />
+                            Zittern
+                        </label></div>
+                        <div><label for type='quiz-question-nr-nah-scratch-that-this-stays-on'>
+                            <input checked id='quiz-question-nr-nah-scratch-that-this-stays-on' type='checkbox' />
+                            Sie glauben Alles, was im Internet steht.
+                        </label></div>
+                    </fieldset>
+                    <div id='button-quiz-submit' style='margin: 20px auto; text-align: center;'><button onclick='submitQuiz();' type='button'>Berechnen</button></div>
+                </div>
+                <div id='section-computing-results' style='display: none;'><h2 class='animated' id='loading-text'>Berechnung läuft...</h2></div>
+                <div id='section-showing-results' style='display: none;'>
+                    <p style='text-align: center;'>Laut unserer 99,999%<small>*</small> korrekten Diagnose, leiden Sie unter</p>
+                    <h2 id='diagnosis-result-text'>???</h2>
+                    <p style='text-align: center;'><small>* <u>Falls wir falsch liegen sollten (unmöglich), dann haben Sie halt Pech gehabt!</u></small></p>
+                    <div id='button-quiz-retry' style='margin: 20px auto; text-align: center;'><button onclick='restartQuiz();' type='button'>Quiz neustarten</button></div>
+                </div>
+            </article>
+        </div></div></div>
+        <div class='div-menu-bar-container container-flex' style='justify-content: flex-start;'>
+            <nav class='container-flex' style='display: flex;'><h2>
+                <a href='/' style='color: #e8e6e3; justify-self: flex-start;'>nirokay.com</a>
+                 › 
+                <a href='/games.html' style='color: #e8e6e3; justify-self: flex-start;'>Games</a>
+            </h2></nav>
+            <select id='id-menu-bar' onchange='changeToSelectedPage();' onfocus='setSelectedToNavigation();' style='justify-self: flex-end;'>
+                <option selected value='--ignore--'>🚀 Navigation</option>
+                <option value='HzgShowAround/index.html'>🔍 HzgShowAround</option>
+                <option value='index.html'>Home</option>
+                <option value='links.html'>Links</option>
+                <option value='projects.html'>Projects</option>
+                <option value='games.html'>Games</option>
+            </select>
+        </div>
+    </body>
 </html>

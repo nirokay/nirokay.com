@@ -6,21 +6,24 @@
         --->
         <meta charset='utf-8' />
         <meta content='width=device-width, initial-scale=1' name='viewport' />
-        <title>404</title>
-        <meta content='404' property='og:title' />
-        <meta content='The page you requested does not exist...' property='description' />
-        <meta content='The page you requested does not exist...' property='og:description' />
+        <title>Pop Cat</title>
+        <meta content='Pop Cat' property='og:title' />
+        <meta content='Feed Pop Cat with food that is falling down from the sky!' property='description' />
+        <meta content='Feed Pop Cat with food that is falling down from the sky!' property='og:description' />
         <link href='/resources/images//favicon.gif' sizes='32x32' type='image/gif' />
         <link href='/styles.css' rel='stylesheet' title='Absolute path to global css' />
         <script defer src='/javascript/menu-bar.js'></script>
+        <script defer src='../javascript/game/popcat.js'></script>
+        <meta content='../resources/images/games/popcat/cat/open.png' property='og:image' />
     </head>
     <body>
-        <div class='div-centering-outer'><div class='div-centering-middle'><div class='div-centering-inner'><header>
-            <h1>404: Not found</h1>
-            <p>The page you requested does not exist :/</p>
-        </header></div></div></div>
+        <div class='div-centering-outer'><div class='div-centering-middle'><div class='div-centering-inner'><canvas id='canvas'></canvas></div></div></div>
         <div class='div-menu-bar-container container-flex' style='justify-content: flex-start;'>
-            <nav class='container-flex' style='display: flex;'><h2><a href='/' style='color: #e8e6e3; justify-self: flex-start;'>nirokay.com</a></h2></nav>
+            <nav class='container-flex' style='display: flex;'><h2>
+                <a href='/' style='color: #e8e6e3; justify-self: flex-start;'>nirokay.com</a>
+                 › 
+                <a href='/games.html' style='color: #e8e6e3; justify-self: flex-start;'>Games</a>
+            </h2></nav>
             <select id='id-menu-bar' onchange='changeToSelectedPage();' onfocus='setSelectedToNavigation();' style='justify-self: flex-end;'>
                 <option selected value='--ignore--'>🚀 Navigation</option>
                 <option value='HzgShowAround/index.html'>🔍 HzgShowAround</option>
