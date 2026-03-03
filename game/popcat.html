@@ -17,7 +17,19 @@
         <meta content='../resources/images/games/popcat/cat/open.png' property='og:image' />
     </head>
     <body>
-        <div class='div-centering-outer'><div class='div-centering-middle'><div class='div-centering-inner'><canvas id='canvas'></canvas></div></div></div>
+        <div class='div-centering-outer'><div class='div-centering-middle'><div class='div-centering-inner'>
+            <header>
+                <h1>Popcat</h1>
+                <p>
+                    Catch falling food and avoid non-food items!
+                    <br />
+                    <small>Game version</small>
+                    <small id='id-game-version'>v?.?.?</small>
+                </p>
+                <div class='container-flex'><button id='id-button-start-game' onclick='popcatGameHasRestarted();' type='button'>(Re-)Start game</button></div>
+            </header>
+            <article><div style='margin: auto; text-align: center;'><canvas height='700' id='canvas' style='border: 5px #e8e6e3 solid; border-radius: 20px;' width='400'></canvas></div></article>
+        </div></div></div>
         <div class='div-menu-bar-container container-flex' style='justify-content: flex-start;'>
             <nav class='container-flex' style='display: flex;'><h2>
                 <a href='/' style='color: #e8e6e3; justify-self: flex-start;'>nirokay.com</a>
