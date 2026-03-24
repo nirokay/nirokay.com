@@ -4,8 +4,26 @@
  * @source https://github.com/nirokay/src.nirokay.com/
  * @website https://nirokay.com/
  * HTML and CSS is generated using https://github.com/nirokay/websitegenerator/
- * Generated at 2026-03-03 @ 10:16.27
+ * Generated at 2026-03-24 @ 06:06.51
 */
+
+#id-init-leaderboard #id-leaderboard-table {
+    margin: auto;
+}
+
+#id-leaderboard-table {
+    margin: auto;
+}
+
+#id-leaderboard-username-div {
+    margin: auto;
+    text-align: center;
+}
+
+#id-leaderboard-status-div {
+    margin: auto;
+    text-align: center;
+}
 
 html {
     color: #e8e6e3;

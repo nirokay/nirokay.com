@@ -14,6 +14,7 @@
         <link href='/styles.css' rel='stylesheet' title='Absolute path to global css' />
         <script defer src='/javascript/menu-bar.js'></script>
         <script defer src='../javascript/game/popcat.js'></script>
+        <script defer src='../javascript/game/leaderboards.js'></script>
         <meta content='../resources/images/games/popcat/cat/nomp.png' property='og:image' />
     </head>
     <body>
@@ -26,6 +27,7 @@
                     <small>Game version</small>
                     <small id='id-game-version'>v?.?.?</small>
                 </p>
+                <div id='id-init-leaderboard'></div>
                 <div class='container-flex'><button id='id-button-start-game' onclick='popcatGameHasRestarted();' type='button'>(Re-)Start game</button></div>
             </header>
             <article><div style='margin: auto; text-align: center;'><canvas height='700' id='canvas' style='border: 5px #e8e6e3 solid; border-radius: 20px;' width='400'></canvas></div></article>

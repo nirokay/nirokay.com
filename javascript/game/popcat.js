@@ -114,8 +114,10 @@ function updateLives() {
     lives--;
     if (lives > 0)
         playSound(popcatSfxDistress);
-    else
+    else {
         playSound(popcatSfxDeath);
+        leaderboardsPostRequest(score);
+    }
 }
 // Init:
 function popcatGameHasRestarted() {
@@ -301,4 +303,5 @@ function setGameVersion() {
 window.onload = () => {
     popcatGame();
     setGameVersion();
+    initLeaderboard("PopCat", popcatGameVersion);
 };
