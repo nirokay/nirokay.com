@@ -161,6 +161,7 @@ async function leaderboardsPostRequest(score) {
     headers.set("Accept", "application/json");
     let request = new Request(getLeaderboardPostUrl(), {
         method: "POST",
+        mode: "no-cors",
         headers: headers,
         body: JSON.stringify(data),
     });
